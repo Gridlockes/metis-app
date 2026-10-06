@@ -10,26 +10,31 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="sub">Metis · Effective 6 October 2026</p>
+  <p class="sub">Metis · Effective 6 October 2026 · Updated 6 October 2026</p>
 
   <p>Metis is a personal dashboard that its owner runs on their own computer. This policy explains what
   Metis does with data from a connected Google account. Metis is not offered as a service to the public,
   and it is used only by the person who runs it.</p>
 
   <h2>What Metis accesses</h2>
-  <p>When you connect Google Calendar, Metis asks for one permission:
-  <code>https://www.googleapis.com/auth/calendar.events</code>. With it, Metis can:</p>
+  <p>When you connect Google Calendar, Metis asks for two permissions.</p>
+  <p><code>https://www.googleapis.com/auth/calendar.events</code> lets Metis:</p>
   <ul>
-    <li>read event titles, descriptions, locations, start and end times, and links in your calendar;</li>
+    <li>read event titles, descriptions, locations, start and end times, and links in the calendars you
+      choose to show;</li>
     <li>create, update and delete events that mirror reminders you set in Metis. Each of these events is
-      tagged with the reminder it belongs to.</li>
+      tagged with the reminder it belongs to, and they are only ever written to your main calendar.</li>
   </ul>
+  <p><code>https://www.googleapis.com/auth/calendar.calendarlist.readonly</code> lets Metis read the names
+  and colours of the calendars in your account, so you can choose which ones to show (for example a work
+  schedule that appears in your Google Calendar). Metis cannot change that list.</p>
   <p>Metis does not access your contacts, email, files or any other part of your Google account through
   this connection.</p>
 
   <h2>How the data is used</h2>
   <ul>
-    <li><b>Displaying your calendar.</b> Events are shown on the Metis calendar page next to your reminders.</li>
+    <li><b>Displaying your calendars.</b> Events from the calendars you tick are shown on the Metis calendar
+      page next to your reminders. Your choice of calendars is saved on your computer.</li>
     <li><b>Keeping reminders in sync.</b> Metis copies your reminders into Google Calendar. When one of
       those events is renamed, moved or deleted in Google, Metis makes the same change to the reminder.
       Metis does not change or delete any other events.</li>
